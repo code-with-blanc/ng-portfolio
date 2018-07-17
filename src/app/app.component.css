@@ -1,0 +1,11 @@
+.my-img {
+  /* use defaults */
+}
+
+@media (min-width: 700px) {
+  .my-img {
+    float: right;
+    margin: 10px 0px 10px 10px;
+    width: 50%;
+  }
+}

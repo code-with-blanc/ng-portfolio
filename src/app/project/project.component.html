@@ -1,0 +1,24 @@
+
+<!-- Idea: make the projects about third or half page long on desktop and page wide on mobile. -->
+<!-- On desktop content is image with text by side and mobile one after another -->
+
+<ul materialize class="collapsible">
+<li>
+  <div class="collapsible-header">
+    <i class="material-icons">filter_drama</i>
+    <ng-content select="[header]"></ng-content>
+  </div>
+
+  <div class="collapsible-body">
+  <div class="row">
+    <div class="col m4">
+      <img class="responsive-img" src="https://www.organicfacts.net/wp-content/uploads/storecarrots.jpg">
+      <!-- <ng-content select="[image]"></ng-content> -->
+    </div>
+    <div class="col m8">
+      <span class="flow-text"><ng-content select="[body]"></ng-content></span>
+    </div>
+  </div>
+  </div>
+</li>
+</ul>

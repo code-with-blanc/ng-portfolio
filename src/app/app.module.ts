@@ -6,12 +6,14 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { SmallboxComponent } from './smallbox/smallbox.component';
 import { SecHeaderComponent } from './sec-header/sec-header.component';
+import { ProjectComponent } from './project/project.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SmallboxComponent,
-    SecHeaderComponent
+    SecHeaderComponent,
+    ProjectComponent
   ],
   imports: [
     BrowserModule,
