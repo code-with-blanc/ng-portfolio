@@ -1,0 +1,8 @@
+.smallbox {
+  margin-left: 0.4rem;
+  margin-right: 0.4rem;
+  margin-bottom: 0.5rem;
+  min-width: 20ex;
+  text-align: center;
+  padding: 10px;
+}
