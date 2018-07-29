@@ -1,7 +1,7 @@
 <!--  Using this theme: https://www.materialpalette.com/cyan/teal -->
 
 <div materialize class="container">
-  <sec-header>About me</sec-header>
+<sec-header>About me</sec-header>
 
   <img class="my-img responsive-img" src="https://i.imgur.com/iJa1pgN.jpg">
 
@@ -10,135 +10,120 @@
   <span class="flow-text" style="text-align:justify"><p>
     Sou um estudante de Engenharia Elétrica em Belo Horizonte. Tenho paixão
     por desenvolver soluções elegantes para problemas desafiadores.
-    </p><p>
+    </p>
+    <p>
     Minha principal área de estudo é computação e meus principais
     interesses são desenvolvimento web, ciência dos dados e
     internet das coisas (IoT).
   </p></span>
 
-  <sec-header>Projects</sec-header>
+<sec-header>Projects</sec-header>
+<ul materialize class="collapsible">
 
+  <project>
+    <div header> Searchy - Startup </div>
+    <div body>
+      Desenvolvimento de um site MVP para a Searchy, startup que busca
+      facilitar a escolha de computadores e celulares (atualmente inativa).
+    </div>
+
+    <div ul>
+      <li>Aprendizado sobre empreendedorismo.</li>
+      <li>Desenvolvimento de uma API REST com Node.js</li>
+      <li>Criação de um banco de dados MongoDB com hospedagem do mesmo na Heroku.</li>
+      <li>Criação de um pequeno front-end em Angular 4 para visualizar e
+        alterar os modelos de Notebook cadastrados no banco de dados.
+      </li>
+      <li>Uso de Google Analytics para avaliar a experiência de usuário no site.</li>
+    </div>
+
+    <div image> <img src="https://www.organicfacts.net/wp-content/uploads/storecarrots.jpg"> </div>
+  </project>
+
+  <project>
+    <div header> ProVANT (drone) </div>
+    <div body>
+      Projeto do MACRO@UFMG para o desenvolvimento de um Veículo Aéreo Não
+      Tripulado (VANT) do tipo Tilt Rotor, tarefa desafiadora do ponto de
+      vista da área de controle. Como bolsista de Iniciação Científica,
+      trabalhei nos sistemas embarcados e na telemetria do VANT.
+    </div>
+
+    <div ul>
+      <li>Melhoria e expansão de uma interface gráfica de telemetria desenvolvida com PyQt.</li>
+      <li>Escolha e implementação de novo protocolo (MAVLink) para
+        comunicação entre estação de telemetria e VANT.
+      </li>
+      <li>Desenvolvimento de programas de teste em um sistema embarcado
+        da família STM32 usando um sistema operacional de tempo real.
+      </li>
+      <li>Implementação e caracterização de um link de comunicação serial
+        entre o sistema embarcado e uma Raspberry Pi.
+      </li>
+    </div>
+
+    <div image> <img src="https://www.organicfacts.net/wp-content/uploads/storecarrots.jpg"> </div>
+  </project>
+
+  <project>
+    <div header> Equipe Autobotz </div>
+    <div body>
+      Participando da equipe de robótica da UFMG, Autobotz,
+      desenvolvemos um barco robótico para a Competição Brasileira
+      de Robótica (CBR) cujo desafio consistia no transporte de
+      blocos de plástico de um lado a outro de uma piscina. Meu
+      trabalho se concentrou nas áreas de visão computacional e eletrônica.
+    </div>
+
+    <div ul>
+      <li>Desenvolvimento de aplicação em C++ para a visão computacional.</li>
+      <li>Uso de algoritmos básicos do OpenCV para a detecção dos
+        blocos que o robô deveria carregar.</li>
+      <li>Criação de uma camada de abstração para que programas rodando
+          em um notebook pudessem usar os sensores e motores sem ter
+          conhecimento sobre especificidades dos microcontroladores.</li>
+      <li>Projeto e confecção de circuito impresso para o acionamento de motores.</li>
+    </div>
+
+    <div image> <img src="https://www.organicfacts.net/wp-content/uploads/storecarrots.jpg"> </div>
+  </project>
+
+  <project>
+    <div header> Eletromagnetismo Computacional </div>
+    <div body>
+      Iniciação Científica na área de métodos computacionais para eletromagnetismo.
+    </div>
+
+    <div ul>
+      <li>Desenvolvimento de uma biblioteca em MATLAB para comunicação
+      com um software de simulação de problemas de eletromagnetismo (HFSS).</li>
+      <li>Modificação de uma implementação do GFEM em MATLAB para
+      acomodar novos parâmetros sendo investigados pela equipe.</li>
+    </div>
+    <div image> <img src="https://www.organicfacts.net/wp-content/uploads/storecarrots.jpg"> </div>
+  </project>
+
+</ul>
+
+<sec-header>Technologies</sec-header>
   <div class="row">
-    <div class="col s12 l6">
-      <project>
-        <div header> Eletromagnetismo Computacional </div>
-        <div body>
-          Iniciação Científica na área de métodos computacionais para eletromagnetismo.
-
-          <ul>
-            <li>Desenvolvimento de uma biblioteca em MATLAB para comunicação
-            com um software de simulação de problemas de eletromagnetismo (HFSS).</li>
-            <li>Modificação de uma implementação do GFEM em MATLAB para
-            acomodar novos parâmetros sendo investigados pela equipe.</li>
-          </ul>
-        </div>
-        <div image> <img src="https://www.organicfacts.net/wp-content/uploads/storecarrots.jpg"> </div>
-      </project>
-    </div>
-
-    <div class="col s12 l6">
-      <project>
-        <div header> Equipe Autobotz </div>
-        <div body>
-          Participando da equipe de robótica da UFMG, Autobotz,
-          desenvolvemos um barco robótico para a Competição Brasileira
-          de Robótica (CBR) cujo desafio consistia no transporte de
-          blocos de plástico de um lado a outro de uma piscina. Meu
-          trabalho se concentrou nas áreas de visão computacional e eletrônica.
-
-          <ul>
-            <li>Desenvolvimento de aplicação em C++ para a visão computacional.</li>
-            <li>Uso de algoritmos básicos do OpenCV para a detecção dos
-                blocos que o robô deveria carregar.</li>
-            <li>Criação de uma camada de abstração para que programas rodando
-              em um notebook pudessem usar os sensores e motores sem ter
-              conhecimento sobre especificidades dos microcontroladores.</li>
-            <li>Projeto e confecção de circuito impresso para o acionamento de motores.</li>
-          </ul>
-        </div>
-        <div image> <img src="https://www.organicfacts.net/wp-content/uploads/storecarrots.jpg"> </div>
-      </project>
-    </div>
-
-    <div class="col s12 l6">
-      <project>
-        <div header> ProVANT (drone) </div>
-        <div body>
-          Projeto do MACRO@UFMG para o desenvolvimento de um Veículo Aéreo Não
-          Tripulado (VANT) do tipo Tilt Rotor, tarefa desafiadora do ponto de
-          vista da área de controle. Como bolsista de Iniciação Científica,
-          trabalhei nos sistemas embarcados e na telemetria do VANT.
-
-          <ul>
-            <li>Melhoria e expansão de uma interface gráfica de telemetria desenvolvida com PyQt.</li>
-            <li>Escolha e implementação de novo protocolo (MAVLink) para
-              comunicação entre estação de telemetria e VANT.
-            </li>
-            <li>Desenvolvimento de programas de teste em um sistema embarcado
-              da família STM32 usando um sistema operacional de tempo real.
-            </li>
-            <li>Implementação e caracterização de um link de comunicação serial
-              entre o sistema embarcado e uma Raspberry Pi.
-            </li>
-          </ul>
-        </div>
-        <div image> <img src="https://www.organicfacts.net/wp-content/uploads/storecarrots.jpg"> </div>
-      </project>
-    </div>
-
-    <div class="col s12 l6">
-      <project>
-        <div header> Searchy - Startup </div>
-        <div body>
-          Desenvolvimento de um site MVP para a Searchy, startup que busca
-          facilitar a escolha de computadores e celulares (atualmente inativa).
-
-          <ul>
-            <li>Aprendizado sobre empreendedorismo.</li>
-            <li>Desenvolvimento de uma API REST com Node.js</li>
-            <li>Criação de um banco de dados MongoDB com hospedagem do mesmo na Heroku.</li>
-            <li>Criação de um pequeno front-end em Angular 4 para visualizar e
-              alterar os modelos de Notebook cadastrados no banco de dados.
-            </li>
-            <li>Uso de Google Analytics para avaliar a experiência de usuário no site.</li>
-          </ul>
-        </div>
-        <div image> <img src="https://www.organicfacts.net/wp-content/uploads/storecarrots.jpg"> </div>
-      </project>
-    </div>
-
-
+    <div class="col s6 m4"> <smallbox>Js / CSS / HTML</smallbox> </div>
+    <div class="col s6 m4"> <smallbox>Angular 4</smallbox> </div>
+    <div class="col s6 m4"> <smallbox>Node.js</smallbox> </div>
+    <div class="col s6 m4"> <smallbox>MongoDB</smallbox> </div>
+    <div class="col s6 m4"> <smallbox>C / C++</smallbox> </div>
+    <div class="col s6 m4"> <smallbox>Python + Qt4</smallbox> </div>
+    <div class="col s6 m4"> <smallbox>Microcontroladores</smallbox> </div>
+    <div class="col s6 m4"> <smallbox>Projeto de Circuitos</smallbox> </div>
+    <!-- <div class="col s6 m4"> <smallbox>Layout de PCB</smallbox> </div> -->
+    <div class="col s6 m4"> <smallbox>MATLAB</smallbox> </div>
   </div>
 
 
+<sec-header>Personal Info</sec-header>
 
 
-  <sec-header>Technologies</sec-header>
-    <!-- <ul class="box-container">
-      <li> <smallbox>O textinho</smallbox> </li>
-      <li> <smallbox>Mais textinho</smallbox> </li>
-      <li> <smallbox>Mais textinho</smallbox> </li>
-      <li> <smallbox>Mais textinho</smallbox> </li>
-      <li> <smallbox>Mais textinho</smallbox> </li>
-      <li> <smallbox>Mais textinho</smallbox> </li>
-    </ul> -->
-
-    <div class="row">
-      <div class="col s6 m4"> <smallbox>Js / CSS / HTML</smallbox> </div>
-      <div class="col s6 m4"> <smallbox>Angular 4</smallbox> </div>
-      <div class="col s6 m4"> <smallbox>Node.js</smallbox> </div>
-      <div class="col s6 m4"> <smallbox>MongoDB</smallbox> </div>
-      <div class="col s6 m4"> <smallbox>C / C++</smallbox> </div>
-      <div class="col s6 m4"> <smallbox>Python + Qt4</smallbox> </div>
-      <div class="col s6 m4"> <smallbox>Microcontroladores</smallbox> </div>
-      <div class="col s6 m4"> <smallbox>Projeto de Circuitos</smallbox> </div>
-      <!-- <div class="col s6 m4"> <smallbox>Layout de PCB</smallbox> </div> -->
-      <div class="col s6 m4"> <smallbox>MATLAB</smallbox> </div>
-    </div>
-
-
-  <sec-header>Personal Info</sec-header>
-</div>
+</div>  <!-- container -->
 
 <footer class="page-footer cyan">
   <span>Lorem Ipsum</span>

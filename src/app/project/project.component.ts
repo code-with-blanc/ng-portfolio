@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'project',
@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProjectComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+    let showMore = false;
+  }
 
   ngOnInit() {
+  }
+
+  toggleShowMore() {
+    console.log('pipoca  :3');
+    this.showMore = !this.showMore;
   }
 
 }

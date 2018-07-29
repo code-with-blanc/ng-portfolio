@@ -3,7 +3,7 @@
 <!-- On desktop content is image with text by side and mobile one after another -->
 
 <ul materialize class="collapsible">
-<li>
+<li materialize>
   <div class="collapsible-header">
     <i class="material-icons">filter_drama</i>
     <ng-content select="[header]"></ng-content>
@@ -11,14 +11,29 @@
 
   <div class="collapsible-body">
   <div class="row">
-    <div class="col m4">
+    <div class="col l6">
       <img class="responsive-img" src="https://www.organicfacts.net/wp-content/uploads/storecarrots.jpg">
       <!-- <ng-content select="[image]"></ng-content> -->
     </div>
-    <div class="col m8">
-      <span class="flow-text"><ng-content select="[body]"></ng-content></span>
+    <div class="col l6">
+      <span class="flow-text">
+        <ng-content select="[body]"></ng-content>
+      </span>
     </div>
+
+    <!-- <div *ngIf="!showMore">
+      <p><button (click)="toggleShowMore()">Mais...</button></p>
+    </div> -->
+
+    <!-- <div *ngIf="showMore"> -->
+    <div class="col s12 flow-text">
+      <ul class="list">
+        <ng-content select=[ul]></ng-content>
+      </ul>
+    </div>
+
   </div>
   </div>
+
 </li>
 </ul>
