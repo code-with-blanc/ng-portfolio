@@ -1,18 +1,27 @@
-.my-img {
-  /* use defaults */
-}
-
-@media (min-width: 700px) {
-  .my-img {
+@media (min-width: 600px) {
+  /* on medium-large screens */
+  .portrait-container {
     float: right;
-    margin: 10px 0px 10px 10px;
-    width: 50%;
+    margin: 10px 0px 10px 50px;
+    width: 40%;
+  }
+}
+@media (min-width: 1200px) {
+  .portrait-container {
+    width: 30%;
   }
 }
 
-.box-container {
+.portrait-container img {
+  height: 100%;
+  width: 100%;
+  /* max-width: 300px;
+  max-height: 300px; */
+}
+
+/* .box-container {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-}
+} */
