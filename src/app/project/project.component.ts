@@ -6,9 +6,10 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
   styleUrls: ['./project.component.css']
 })
 export class ProjectComponent implements OnInit {
+  showMore : boolean;
 
   constructor() {
-    let showMore = false;
+    this.showMore = false;
   }
 
   ngOnInit() {
@@ -17,10 +18,6 @@ export class ProjectComponent implements OnInit {
   toggleShowMore() {
     console.log('pipoca  :3');
     this.showMore = !this.showMore;
-  }
-
-  open() {
-    console.log('open me up!');
   }
 
 }
