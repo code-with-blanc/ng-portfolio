@@ -19,4 +19,8 @@ export class ProjectComponent implements OnInit {
     this.showMore = !this.showMore;
   }
 
+  open() {
+    console.log('open me up!');
+  }
+
 }
