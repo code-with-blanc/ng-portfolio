@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { SmallboxComponent } from './smallbox/smallbox.component';
 import { SecHeaderComponent } from './sec-header/sec-header.component';
 import { ProjectComponent } from './project/project.component';
+import { InfoTableComponent } from './info-table/info-table.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SmallboxComponent,
     SecHeaderComponent,
-    ProjectComponent
+    ProjectComponent,
+    InfoTableComponent
   ],
   imports: [
     BrowserModule,
